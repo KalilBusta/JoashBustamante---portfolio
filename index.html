@@ -237,6 +237,45 @@
             z-index: 1;
         }
         
+        /* YouTube Showcase */
+        .youtube-showcase {
+            max-width: 800px;
+            margin: 60px auto 0;
+            background-color: white;
+            border-radius: 8px;
+            padding: 25px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+            text-align: center;
+        }
+        
+        .youtube-showcase h3 {
+            margin-bottom: 20px;
+            color: #333333;
+        }
+        
+        .video-container {
+            position: relative;
+            width: 100%;
+            padding-bottom: 56.25%; /* 16:9 Aspect Ratio */
+            height: 0;
+            overflow: hidden;
+            margin-bottom: 20px;
+        }
+        
+        .video-container iframe {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            border-radius: 4px;
+        }
+        
+        .video-description {
+            color: #555;
+            line-height: 1.6;
+        }
+        
         @media (max-width: 768px) {
             .timeline::after {
                 left: 31px;
@@ -420,6 +459,14 @@
             transform: translateY(-3px);
             box-shadow: 0 5px 15px rgba(0,0,0,0.1);
         }
+        
+        #experience {
+            background-color: #f0f0f0;
+        }
+        
+        #achievements {
+            background-color: #f0f0f0;
+        }
     </style>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 </head>
@@ -427,7 +474,7 @@
     <!-- Header Section -->
     <header>
         <div class="container header-content">
-            <img src="/profile.jpg" alt="Joash Bustamante" class="profile-img">
+            <img src="/api/placeholder/150/150" alt="Joash Bustamante" class="profile-img">
             <h1>Joash Hezekalil J. Bustamante</h1>
             <p>High school graduate with a strong foundation in sales, leadership, and customer service. Passionate about mathematics, technology, and problem-solving.</p>
             <div class="contact-info">
@@ -496,7 +543,7 @@
     </section>
     
     <!-- Experience Section -->
-    <section id="experience" style="background-color: #f0f0f0;">
+    <section id="experience">
         <div class="container">
             <div class="section-title">
                 <h2>Work Experience</h2>
@@ -530,6 +577,16 @@
                     </div>
                 </div>
             </div>
+            
+            <!-- YouTube Video Showcase -->
+            <div class="youtube-showcase">
+                <h3>Featured Project: AI Storytelling</h3>
+                <div class="video-container">
+                    <!-- Using a sample video for demonstration -->
+                    <iframe width="560" height="315" src="https://www.youtube.com/embed/dQw4w9WgXcQ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                </div>
+                <p class="video-description">This is a sample of my work in AI storytelling and digital content creation. The video showcases my skills in scriptwriting, video editing, and creative storytelling using AI tools.</p>
+            </div>
         </div>
     </section>
     
@@ -555,7 +612,7 @@
     </section>
     
     <!-- Achievements Section -->
-    <section id="achievements" style="background-color: #f0f0f0;">
+    <section id="achievements">
         <div class="container">
             <div class="section-title">
                 <h2>Awards & Achievements</h2>
