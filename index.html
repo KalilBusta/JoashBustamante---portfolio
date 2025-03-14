@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -40,7 +41,6 @@
             border: 5px solid rgba(255,255,255,0.3);
             margin-bottom: 20px;
             object-fit: cover;
-            background-color: #777; /* Placeholder for missing image */
         }
         
         .header-content h1 {
@@ -387,100 +387,6 @@
             color: #333333;
         }
         
-        /* YouTube Channel Hover Box Styles */
-        .youtube-link-container {
-            position: relative;
-            display: inline-block;
-        }
-        
-        .youtube-hover-box {
-            display: none;
-            position: absolute;
-            top: 100%;
-            left: 0;
-            background-color: white;
-            border-radius: 8px;
-            box-shadow: 0 5px 15px rgba(0,0,0,0.2);
-            padding: 15px;
-            width: 280px;
-            z-index: 100;
-            margin-top: 10px;
-            transition: transform 0.3s ease, opacity 0.3s ease;
-            transform: translateY(-10px);
-            opacity: 0;
-        }
-        
-        .youtube-hover-box {
-            pointer-events: none;
-            transition: transform 0.3s ease, opacity 0.2s ease;
-        }
-        
-        .youtube-link-container:hover .youtube-hover-box {
-            display: block;
-            transform: translateY(0);
-            opacity: 1;
-            pointer-events: all;
-        }
-        
-        /* Keep the box visible when hovering over it directly */
-        .youtube-hover-box:hover {
-            display: block;
-            opacity: 1;
-            transform: translateY(0);
-        }
-        
-        .youtube-hover-box:before {
-            content: '';
-            position: absolute;
-            top: -8px;
-            left: 20px;
-            width: 16px;
-            height: 16px;
-            background-color: white;
-            transform: rotate(45deg);
-            box-shadow: -3px -3px 5px rgba(0,0,0,0.05);
-        }
-        
-        .youtube-links {
-            display: flex;
-            flex-direction: column;
-            gap: 10px;
-        }
-        
-        .youtube-links a {
-            display: flex;
-            align-items: center;
-            text-decoration: none;
-            color: #333;
-            padding: 8px 10px;
-            border-radius: 4px;
-            transition: all 0.2s ease;
-        }
-        
-        .youtube-links a:hover {
-            background-color: #f0f0f0;
-            transform: translateX(5px);
-        }
-        
-        .youtube-links i {
-            color: #FF0000;
-            margin-right: 10px;
-            font-size: 1.2rem;
-        }
-        
-        .channel-title {
-            white-space: nowrap;
-            overflow: hidden;
-            text-overflow: ellipsis;
-            max-width: 200px;
-        }
-        
-        .channel-subtitle {
-            font-size: 0.8rem;
-            color: #777;
-            margin-top: 2px;
-        }
-        
         /* Footer */
         footer {
             background-color: #222222;
@@ -662,36 +568,7 @@
                         <h3>AI Storytelling YouTube Channel Manager</h3>
                         <div class="date">Freelance</div>
                         <ul>
-                            <li>Created and managed a YouTube channel dedicated to AI storytelling content. 
-                                <span class="youtube-link-container" id="channelContainer">
-                                    <a href="javascript:void(0);" class="view-channel-link" id="viewChannelBtn" onclick="toggleChannelBox()">View Channel</a>
-                                    <div class="youtube-hover-box" id="channelBox">
-                                        <div class="youtube-links">
-                                            <a href="https://www.youtube.com/@%D0%A2%D0%B5%D0%BD%D0%B8%D0%BF%D1%80%D0%BE%D1%88%D0%BB%D0%BE%D0%B3%D0%BE1" target="_blank">
-                                                <i class="fab fa-youtube"></i>
-                                                <div>
-                                                    <div class="channel-title">Тени прошлого</div>
-                                                    <div class="channel-subtitle">Main Channel</div>
-                                                </div>
-                                            </a>
-                                            <a href="https://www.youtube.com/@%D0%A1%D0%B5%D0%BA%D1%80%D0%B5%D1%82%D1%8B%D0%BB%D0%B5%D0%B3%D0%B5%D0%BD%D0%B4/videos" target="_blank">
-                                                <i class="fab fa-youtube"></i>
-                                                <div>
-                                                    <div class="channel-title">Секреты легенд</div>
-                                                    <div class="channel-subtitle">Legends & Mysteries</div>
-                                                </div>
-                                            </a>
-                                            <a href="https://www.youtube.com/@lukeslovingstories" target="_blank">
-                                                <i class="fab fa-youtube"></i>
-                                                <div>
-                                                    <div class="channel-title">Luke's Loving Stories</div>
-                                                    <div class="channel-subtitle">English Content</div>
-                                                </div>
-                                            </a>
-                                        </div>
-                                    </div>
-                                </span>
-                            </li>
+                            <li>Created and managed a YouTube channel dedicated to AI storytelling content. <a href="https://www.youtube.com/@%D0%A2%D0%B5%D0%BD%D0%B8%D0%BF%D1%80%D0%BE%D1%88%D0%BB%D0%BE%D0%B3%D0%BE1" target="_blank" style="color: #333333; font-weight: bold;">View Channel</a></li>
                             <li>Developed original storytelling concepts and scripts leveraging AI technology.</li>
                             <li>Designed eye-catching thumbnails that improved click-through rates and channel visibility.</li>
                             <li>Produced, edited, and published engaging video content on a regular schedule.</li>
@@ -706,13 +583,8 @@
             <div class="youtube-showcase">
                 <h3>Featured Project: AI Storytelling</h3>
                 <div class="video-container">
-                    <!-- Using a placeholder since we can't embed external videos -->
-                    <div style="position:absolute; top:0; left:0; width:100%; height:100%; background-color:#333; display:flex; justify-content:center; align-items:center; color:white; border-radius:4px;">
-                        <div style="text-align:center;">
-                            <i class="fab fa-youtube" style="font-size:48px; margin-bottom:10px;"></i>
-                            <div>YouTube Video Placeholder</div>
-                        </div>
-                    </div>
+                    <!-- Using a sample video for demonstration -->
+                    <iframe width="560" height="315" src="https://www.youtube.com/embed/G4W4y-syTlg" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
                 </div>
                 <p class="video-description">This is a sample of my work in AI storytelling and digital content creation. The video showcases my skills in scriptwriting, simple video editing, and creative storytelling using AI tools.</p>
             </div>
@@ -837,6 +709,7 @@
             <div class="footer-content">
                 <p>Thank you for visiting my portfolio</p>
                 <div class="social-links">
+                    <!-- Add social media links when available -->
                     <a href="#"><i class="fab fa-linkedin"></i></a>
                     <a href="#"><i class="fab fa-github"></i></a>
                     <a href="#"><i class="fab fa-facebook"></i></a>
@@ -847,36 +720,5 @@
             </div>
         </div>
     </footer>
-    
-    <script>
-        function toggleChannelBox() {
-            const container = document.getElementById('channelContainer');
-            container.classList.toggle('active');
-            
-            // Prevent the link from being followed
-            return false;
-        }
-        
-        // Close the box when clicking anywhere else on the page
-        document.addEventListener('click', function(event) {
-            const container = document.getElementById('channelContainer');
-            const viewChannelBtn = document.getElementById('viewChannelBtn');
-            const channelBox = document.getElementById('channelBox');
-            
-            // If click is outside both the button and the box
-            if (!viewChannelBtn.contains(event.target) && !channelBox.contains(event.target)) {
-                container.classList.remove('active');
-            }
-        });
-        
-        // Initialize
-        document.addEventListener('DOMContentLoaded', function() {
-            const viewChannelBtn = document.getElementById('viewChannelBtn');
-            viewChannelBtn.addEventListener('click', function(e) {
-                e.preventDefault();
-                toggleChannelBox();
-            });
-        });
-    </script>
 </body>
 </html>
