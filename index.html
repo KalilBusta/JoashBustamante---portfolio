@@ -824,5 +824,35 @@
             </div>
         </div>
     </footer>
+    <script>
+    function toggleChannelBox() {
+        const container = document.getElementById('channelContainer');
+        container.classList.toggle('active');
+        
+        // Prevent the link from being followed
+        return false;
+    }
+    
+    // Close the box when clicking anywhere else on the page
+    document.addEventListener('click', function(event) {
+        const container = document.getElementById('channelContainer');
+        const viewChannelBtn = document.getElementById('viewChannelBtn');
+        const channelBox = document.getElementById('channelBox');
+        
+        // If click is outside both the button and the box
+        if (!viewChannelBtn.contains(event.target) && !channelBox.contains(event.target)) {
+            container.classList.remove('active');
+        }
+    });
+    
+    // Initialize
+    document.addEventListener('DOMContentLoaded', function() {
+        const viewChannelBtn = document.getElementById('viewChannelBtn');
+        viewChannelBtn.addEventListener('click', function(e) {
+            e.preventDefault();
+            toggleChannelBox();
+        });
+    });
+</script>
 </body>
 </html>
